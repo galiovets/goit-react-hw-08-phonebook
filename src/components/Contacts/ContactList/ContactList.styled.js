@@ -1,12 +1,19 @@
 import styled from 'styled-components';
 
 export const ContactListStyled = styled.ul`
-  max-width: 400px;
+  max-width: 380px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
-  background-color: white;
-  border: 1px solid rgba(50, 50, 250, 0.25);
-  border-radius: 10px;
-  box-shadow: 8px 8px 19px 0px rgba(34, 60, 80, 0.12);
+  padding: 10px 0;
+  background-color: transparent;
+  color: black;
+`;
+
+export const ContactsText = styled.p`
+  text-align: center;
+  font-size: 18px;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
 `;

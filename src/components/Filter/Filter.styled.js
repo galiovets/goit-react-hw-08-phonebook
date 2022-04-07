@@ -8,6 +8,7 @@ export const FilterLabel = styled.label`
 `;
 
 export const FilterInput = styled.input`
+  max-width: 400px;
   font-size: 15px;
   display: block;
   width: 100%;
