@@ -5,13 +5,8 @@ export const FormStyled = styled.form`
   margin-right: auto;
   max-width: 400px;
   margin-bottom: 20px;
-  /* padding: 20px; */
   padding: 10px;
-  /* background-color: rgba(50, 50, 250, 0.18); */
   background-color: transparent;
-  /* border: 1px solid rgba(129, 4, 123, 0.12); */
-  /* border-radius: 20px; */
-  /* box-shadow: 8px 8px 19px 0px rgba(34, 60, 80, 0.12); */
 `;
 
 export const FormLabel = styled.label`
@@ -29,21 +24,15 @@ export const FormInput = styled.input`
   padding: 5px 10px;
   margin-top: 5px;
   margin-bottom: 10px;
-  /* background-color: white; */
   background-color: transparent;
   color: black;
-  /* border-radius: 8px; */
   border: none;
   border-bottom: 1px solid black;
-  /* border-radius: 5px; */
-  /* border: 1px solid black; */
-  /* outline: none; */
   &::placeholder {
     color: black;
   }
   &:hover,
   &:focus {
-    /* outline: 1px solid rgba(129, 4, 123, 0.12); */
     outline: none;
     border-radius: 3px;
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,10 +49,8 @@ export const AddButton = styled.button`
   min-width: 80px;
   padding: 7px 10px;
   margin-top: 20px;
-  /* background-color: #fff; */
   color: black;
   background-color: transparent;
-  /* border: 2px solid rgba(95, 4, 91, 0.329); */
   border: 1px solid black;
   border-radius: 50px;
   cursor: pointer;
@@ -73,8 +60,5 @@ export const AddButton = styled.button`
     background-color: black;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* color: black;
-    background-color: transparent;
-    transition: background-color 300ms ease; */
   }
 `;

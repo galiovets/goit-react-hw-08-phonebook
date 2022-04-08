@@ -5,7 +5,6 @@ export const ContactItem = styled.li`
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
-  /* padding: 15px 10px; */
   &:not(:last-child) {
     margin-bottom: 7px;
   }
@@ -25,9 +24,7 @@ export const ContactText = styled.p`
 export const DeleteBtn = styled.button`
   height: 22px;
   padding: 2px 2px;
-  /* background-color: #fff; */
   background-color: transparent;
-  /* border: 1px solid rgba(95, 4, 91, 0.329); */
   border: 1px solid black;
   border-radius: 50%;
   cursor: pointer;

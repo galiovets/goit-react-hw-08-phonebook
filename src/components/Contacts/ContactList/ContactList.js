@@ -1,6 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getAllContacts } from 'redux/contacts/contacts-selectors';
+import {
+  getAllContacts,
+  isLoading,
+} from 'redux/contacts/contacts-selectors';
+import Loader from 'components/Loader';
 import {
   ContactListStyled,
   ContactsText,
@@ -10,10 +14,13 @@ import { deleteContact } from 'redux/contacts/contacts-operations';
 
 const ContactList = () => {
   const contacts = useSelector(getAllContacts);
+  const getLoading = useSelector(isLoading);
   const dispatch = useDispatch();
+
   return (
     <>
-      {contacts.length > 0 ? (
+      {getLoading && <Loader />}
+      {!getLoading && contacts.length > 0 ? (
         <ContactListStyled>
           {contacts.map(contact => {
             return (

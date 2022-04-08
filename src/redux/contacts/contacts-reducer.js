@@ -12,8 +12,6 @@ const contacts = createReducer([], {
   [addContact.fulfilled]: (state, { payload }) => [...state, payload],
   [deleteContact.fulfilled]: (state, { meta }) =>
     state.filter(({ id }) => id !== meta.arg),
-  // [deleteContact.fulfilled]: (state, { payload }) =>
-  //   state.filter(contact => contact.id !== payload.id),
 });
 
 const filter = createReducer('', {
@@ -29,8 +27,14 @@ const error = createReducer(null, {
   [deleteContact.pending]: () => null,
 });
 
+const loading = createReducer(false, {
+  [fetchContacts.pending]: () => true,
+  [fetchContacts.fulfilled]: () => false,
+});
+
 export default combineReducers({
   contacts,
   filter,
   error,
+  loading,
 });

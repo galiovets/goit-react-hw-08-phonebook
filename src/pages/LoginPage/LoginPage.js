@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { logIn } from 'redux/auth/auth-operations';
 import { Container } from '../RegisterPage/RegisterPage.styled';
 import { Title } from 'pages/HomePage/HomePage.styled';
 import {
@@ -8,7 +9,6 @@ import {
   FormLabel,
   AddButton,
 } from 'components/Form/Form.styled';
-import { logIn } from '../../redux/auth/auth-operations';
 
 function LoginPage() {
   const [email, setEmail] = useState('');

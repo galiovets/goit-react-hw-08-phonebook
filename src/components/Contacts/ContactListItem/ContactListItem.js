@@ -14,7 +14,6 @@ function ContactListItem({ name, number, onDelete }) {
       </ContactText>
       <DeleteBtn type="button" onClick={onDelete}>
         <VscClose style={{ color: 'red' }} />
-        {/* <VscClose style={{ color: 'rgba(255,0,0,.548)' }} /> */}
       </DeleteBtn>
     </ContactItem>
   );

@@ -63,7 +63,6 @@ export default function Form() {
   return (
     <FormStyled onSubmit={handleSubmit}>
       <FormLabel>
-        {/* Name */}
         <FormInput
           type="text"
           name="name"
@@ -76,7 +75,6 @@ export default function Form() {
         />
       </FormLabel>
       <FormLabel>
-        {/* Number */}
         <FormInput
           type="tel"
           name="number"

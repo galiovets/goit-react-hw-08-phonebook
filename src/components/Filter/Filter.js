@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { filterChange } from 'redux/contacts/contacts-actions';
 import { getFilter } from 'redux/contacts/contacts-selectors';
-// import { FilterLabel, FilterInput } from './Filter.styled';
+import { filterChange } from 'redux/contacts/contacts-actions';
 import {
   FormStyled,
   FormLabel,
@@ -19,7 +18,6 @@ const Filter = () => {
   return (
     <FormStyled>
       <FormLabel>
-        {/* Find contacts by name */}
         <FormInput
           type="text"
           name="name"

@@ -2,7 +2,6 @@ import {
   Title,
   Container,
   MainText,
-  // Button,
   TextLink,
 } from './HomePage.styled';
 
